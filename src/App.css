@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#root {
+  z-index: 10;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: 4px solid orange;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: yellow;
+  text-transform: uppercase;
+}
+
+.button__bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.principal {
+  position: relative;
+  height: 100vh;
+}
+
+.principal__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4rem;
+  width: 56rem;
+}
+
+.principal__logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.regles {
+  position: relative;
+  height: 100vh;
+}
+
+.regles__container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 12rem;
+  margin-top: 8rem;
+}
+
+.regles__title {
+  text-transform: uppercase;
+}
+
+.regles__logo,
+.configuration__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.25rem;
+  width: 24rem;
+}
+
+.regles__logo__img,
+.configuration__logo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.regles__perso {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -1rem;
+  margin-bottom: -1rem;
+  width: 32rem;
+}
+
+.regles__perso__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.principal__btns {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+
+.principal__btns__configurer {
+}
+
+.configuration {
+  height: 100vh;
+  width: 100%;
+  padding-top: 8rem;
+  padding-inline: 4rem;
+  padding-bottom: 2rem;
+}
+
+.configuration__inner {
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 0.25rem 4rem;
+  background: rgba(255, 165, 0, 0.7);
+  border: 2px solid rgba(255, 165, 0, 1);
+  border-radius: 4rem;
+  overflow: scroll;
+}
+.configuration__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.configuration__choix-question {
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.configuration__choix-question span {
+  text-transform: uppercase;
+}
+
+.configuration__choix-question__label {
+  text-transform: uppercase;
+}
+
+.configuration__choix-question__niveau-facile {
+  color: green;
+}
+
+.configuration__choix-question__niveau-intermediaire {
+  color: orange;
+}
+
+.configuration__choix-question__niveau-difficile {
+  color: red;
+}
+
+.configuration__choix-question__difficulte {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.choix-question__question {
+  text-align: center;
+  color: white;
+  width: 100%;
+  border-radius: 2rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  background: red;
+  margin-block: 4rem;
+}
+
+.choix-question__question__input {
+  border: none;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.choix-question__form button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
